@@ -1,5 +1,3 @@
-@import './media';
-
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +34,6 @@ button {
 section {
   background-color: #043e51;
   max-width: 1440px;
-
 }
 
 .section__container {
@@ -383,31 +380,29 @@ section {
   align-items: center;
   gap: 26px;
 
-  p{
+  p {
     width: 215px;
-height: 73px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 25.6px;
-text-align: left;
-color: #696969;
-
+    height: 73px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #696969;
   }
 
-  h5{
+  h5 {
     width: 213px;
-height: 29px;
-color: #0F1221;
-font-family: "Inter";
-font-size: 24px;
-font-weight: 600;
-line-height: 29.05px;
-text-align: left;
+    height: 29px;
+    color: #0f1221;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
 
-margin-top: 25px;
-margin-bottom: 10px;
-
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
 
   .flow {
@@ -422,8 +417,246 @@ margin-bottom: 10px;
     box-shadow: 0px 41.78px 33.42px 0px #0000000d;
     background-color: #08546c;
 
-    h5{
-        color: #fff;
+    h5 {
+      color: #fff;
     }
+  }
+}
+// RESPONSIVE DIZAYN QISMI
+
+@media screen and (max-width: 1140px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header ul {
+    gap: 30px;
+  }
+
+  .header button {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .hero {
+    gap: 100px;
+  }
+
+  .hero-left h1 {
+    font-size: 50px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .hero-left-enter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-lost {
+    width: 260px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .static {
+    width: 100%;
+    padding: 60px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .main__container .main-top h2 {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .main-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .flow {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header button {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .hero-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-left-enter {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-lost {
+    width: 220px;
+    padding: 10px;
+  }
+
+  .static {
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .main__container .main-top h2 {
+    font-size: 36px;
+  }
+
+  .main-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .flow {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+  section {
+    width: 100%;
+    height: 2150px;
+
+    margin-bottom: 100px;
+  }
+
+  .section__container {
+    position: static;
+  }
+
+  .static {
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .static-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    .flow{
+      border-radius: 10px;
+    }
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .static {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header button {
+    width: 80px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 12px;
+  }
+
+  .main__container {
+    gap: 40px;
+  }
+
+  .main-top h2 {
+    font-size: 36px;
+  }
+
+  .main-bottom p {
+    font-size: 14px;
+  }
+
+  .static {
+    padding: 10px;
   }
 }
